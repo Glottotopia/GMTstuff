@@ -1,0 +1,1 @@
+../GMTstuff/examples/coastriverborder.sh
