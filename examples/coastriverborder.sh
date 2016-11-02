@@ -1,7 +1,8 @@
 #!/bin/bash
 # Purpose:      create a map with political boundaries and rivers
-#
-# GMT modules:  pscoast, pslegend
+# GMT modules:  pscoast
+# Usage: ./coastriverborder.sh iceland -30 -10 60 70
+
 
 filename=$1
 west=$2
@@ -9,7 +10,7 @@ east=$3
 south=$4
 north=$5
 
-echo $filename $west $east $south $north end
+echo $filename $west $east $south $north 
 
 GMT pscoast -R$west/$east/$south/$north \
               -Jm.5c \
